@@ -1,0 +1,54 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.sectionContainer h3 {
+  font-size: 28px;
+}
+.sectionContainer h1 {
+  font-size: 46px;
+}
+.sectionContainer span {
+  color: #f9573ee1;
+}
+.sectionContainer p {
+  font-size: 22px;
+  font-family: cursive;
+  letter-spacing: 1px;
+}
+.sectionContainer button {
+  width: fit-content;
+  padding: 6px;
+}
+@media screen and (max-width: 550px) {
+  .sectionContainer {
+    padding: 64px 16px;
+  }
+  .sectionContainer h3 {
+    font-size: 20px;
+  }
+  .sectionContainer h1 {
+    font-size: 28px;
+  }
+  .sectionContainer p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sectionContainer h3 {
+    font-size: 12px;
+  }
+  .sectionContainer h1 {
+    font-size: 14px;
+  }
+  .sectionContainer p {
+    font-size: 10px;
+  }
+}

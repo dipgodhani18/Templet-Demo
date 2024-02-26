@@ -1,0 +1,101 @@
+.mainHostingRowContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 32px;
+  gap: 42px;
+  background-color: black;
+}
+.hostingRowContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #0e0e10;
+  box-shadow: inset #5e8cff 0px 0px 12px;
+}
+.hostingRowContainer .hostingContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: white;
+  text-align: center;
+  padding: 32px;
+  border-bottom: 1px solid gray;
+}
+.hostingRowContainer .hostingContentContainer h2 {
+  font-size: 30px;
+  color: #5e8cff;
+  letter-spacing: 1px;
+
+  text-decoration: underline;
+}
+.hostingRowContainer .hostingContentContainer p {
+  color: gray;
+  font-family: cursive;
+  letter-spacing: 1px;
+}
+.hostingRowContainer .hostingContentContainer span {
+  font-size: 36px;
+  color: #f9573ee1;
+  font-weight: bolder;
+}
+.hostingRowContainer .hostingContentContainer button {
+  width: fit-content;
+  padding: 8px;
+  margin: auto;
+}
+
+.hostingRowContainer .hostingFeaturesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #5e8cff;
+  padding: 32px;
+}
+.hostingRowContainer .hostingFeaturesContainer h2 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.hostingRowContainer .hostingFeaturesContainer ul {
+  list-style-type: none;
+}
+.hostingRowContainer .hostingFeaturesContainer ul li {
+  list-style-type: none;
+  margin-top: 4px;
+  color: lightgray;
+}
+
+.active {
+  background-color: antiquewhite;
+  color: #0e0e10 !important;
+}
+.active p,
+.active li,
+.active button {
+  color: #0e0e10 !important;
+}
+
+@media screen and (max-width: 400px) {
+  .mainHostingRowContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 16px;
+    gap: 42px;
+  }
+  .hostingRowContainer .hostingContentContainer h2 {
+    font-size: 26px;
+  }
+
+  .hostingRowContainer .hostingContentContainer span {
+    font-size: 28px;
+  }
+  .hostingRowContainer .hostingContentContainer {
+    padding: 26px;
+  }
+  .hostingRowContainer .hostingFeaturesContainer h2 {
+    font-size: 20px;
+  }
+  .hostingRowContainer .hostingFeaturesContainer ul li {
+    font-size: 14px;
+  }
+}

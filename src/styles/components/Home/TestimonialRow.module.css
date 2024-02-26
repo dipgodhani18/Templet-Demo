@@ -1,0 +1,59 @@
+.mainTestimonialContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 32px;
+  gap: 42px;
+  background-color: black;
+}
+
+.testimonialContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: #0e0e10;
+  box-shadow: inset rgb(82, 83, 84) 0px 0px 12px;
+}
+.imageContent {
+  width: 100%;
+}
+.imageContent img {
+  width: 100%;
+  border-radius: 12px;
+}
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: white;
+}
+.textContent span {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+.textContent h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 24px;
+  color: #f9573ee1;
+}
+.textContent p {
+  font-family: cursive;
+  font-size: 14px;
+  color: lightgray;
+}
+
+@media screen and (max-width: 400px) {
+  .mainTestimonialContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 16px;
+    gap: 42px;
+  }
+  .textContent h2 {
+    font-size: 18px;
+  }
+  .textContent p {
+    font-size: 12px;
+  }
+}

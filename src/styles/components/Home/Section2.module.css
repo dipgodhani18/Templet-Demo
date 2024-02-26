@@ -1,0 +1,115 @@
+.container {
+  gap: 36px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 32px;
+  background-color: #0e0e10;
+}
+.container .imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset rgba(255, 93, 72, 0.971) 0px 0px 36px;
+  border-radius: 8px;
+}
+
+.container .imageContainer img {
+  border-radius: 8px;
+  height: 90%;
+  width: 90%;
+}
+.container .contentContainer {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container .contentContainer h1 {
+  color: #f9573ee1;
+  font-size: 40px;
+  text-align: center;
+}
+.container .contentContainer h1 span {
+  font-size: 40px;
+  color: white;
+}
+.container .contentContainer p {
+  color: white;
+  text-align: center;
+  font-family: cursive;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.contentContainerCF {
+  order: 1;
+}
+
+.imageContainerCF {
+  order: 2;
+}
+
+/*  =======================  Responsive ======================== */
+
+@media only screen and (max-width: 400px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 16px;
+  }
+  .container .contentContainer {
+    padding: 10px;
+  }
+  .container .imageContainer img {
+    height: 80%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container .contentContainer h1 {
+    font-size: 32px;
+  }
+  .container .contentContainer h1 span {
+    font-size: 32px;
+  }
+  .container .contentContainer p {
+    font-size: 14px;
+  }
+  .contentContainerCF {
+    order: 2;
+  }
+
+  .imageContainerCF {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .container .contentContainer h1 {
+    font-size: 24px;
+  }
+  .container .contentContainer h1 span {
+    font-size: 24px;
+  }
+
+  .container .contentContainer p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    padding: 8px;
+  }
+  .container .contentContainer h1 {
+    font-size: 18px;
+  }
+  .container .contentContainer h1 span {
+    font-size: 16px;
+  }
+  .container .contentContainer p {
+    font-size: 8px;
+  }
+}

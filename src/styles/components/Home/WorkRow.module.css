@@ -1,0 +1,49 @@
+.mainWorkContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 32px;
+  gap: 42px;
+  background-color: black;
+}
+.workContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: #0e0e10;
+  box-shadow: inset rgb(36, 160, 255) 0px 0px 10px,
+    inset rgb(255, 12, 12) 0px 0px 6px;
+}
+.workImageContainer {
+  width: 100%;
+}
+.workImageContainer img {
+  width: 100%;
+  border-radius: 12px;
+}
+.workContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: white;
+}
+.workContentContainer h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 24px;
+}
+
+.workContentContainer button {
+  width: fit-content;
+  padding: 8px 12px;
+}
+@media screen and (max-width: 400px) {
+  .mainWorkContainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 16px;
+    gap: 42px;
+  }
+  .workContentContainer h2 {
+    font-size: 16px;
+  }
+}

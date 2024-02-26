@@ -1,0 +1,45 @@
+.titleContainer {
+  border-top: 1px solid gray;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  gap: 32px;
+  flex-direction: column;
+  text-align: center;
+}
+.titleContainer h1 {
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+.titleContainer p {
+  font-family: cursive;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .titleContainer {
+    gap: 20px;
+    padding: 32px 16px;
+  }
+  .titleContainer h1 {
+    font-size: 32px;
+  }
+  .titleContainer p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .titleContainer {
+    gap: 18px;
+  }
+  .titleContainer h1 {
+    font-size: 26px;
+  }
+  .titleContainer p {
+    font-size: 12px;
+  }
+}

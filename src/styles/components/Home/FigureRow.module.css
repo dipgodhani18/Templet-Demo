@@ -1,0 +1,42 @@
+.figureMainContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 62px 32px;
+  gap: 38px;
+  background-color: black;
+}
+.figureContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: transparent;
+  box-shadow: inset rgba(60, 64, 67) 0px 0px 12px;
+}
+
+.figureContainer h2 {
+  font-size: 42px;
+  color: #f9573ee1;
+  text-align: center;
+}
+.figureContainer p {
+  font-family: cursive;
+  font-size: 16px;
+  color: lightgray;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .figureMainContainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 16px;
+    gap: 42px;
+  }
+  .figureContainer h2 {
+    font-size: 24px;
+  }
+  .figureContainer p {
+    font-size: 12px;
+  }
+}
